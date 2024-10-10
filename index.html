@@ -7,8 +7,11 @@
     <title>Alura Books</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -46,10 +49,44 @@
         </div>
     </header>
     <section class="banner">
-        <h2 class="banner-titulo"> Já sabe por onde começar?</h2>
-        <p class="banner-texto"> Encontre oque precisa para seu desenvolvimento!</p>
-        <input type="search" class="banner pesquisa" placeholder="Qual será sua próxima leitura">
+        <h2 class="banner-titulo">Já sabe por onde começar?</h2>
+        <p class="banner-texto">Encontre o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner-pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+    <section class="carrossel">
+        <h2 class="carrossel-titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img/ApacheKafka.png" alt="Livro sobre Apache Kafka da AluraBooks"></div>
+      <div class="swiper-slide"><img src="img/Javascript.png" alt="Livro sobre Javascript da AluraBooks"></div> 
+      <div class="swiper-slide"><img src="img/Acessibilidade.png" alt="Livro sobre Acessibilidade da AluraBooks"></div>
+      <div class="swiper-slide"><img src="img/Arquitetura.png" alt="Livro sobre Arquitetura da AluraBooks"></div> 
+
+
+
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+          speed: 400,
+        spaceBetween: 10});
+        </script>
+     
 </body>
 
-</html>
+</html> 
