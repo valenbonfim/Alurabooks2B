@@ -55,38 +55,37 @@
     </section>
     <section class="carrossel">
         <h2 class="carrossel-titulo">Novos lançamentos</h2>
-        <!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="img/ApacheKafka.png" alt="Livro sobre Apache Kafka da AluraBooks"></div>
-      <div class="swiper-slide"><img src="img/Javascript.png" alt="Livro sobre Javascript da AluraBooks"></div> 
-      <div class="swiper-slide"><img src="img/Acessibilidade.png" alt="Livro sobre Acessibilidade da AluraBooks"></div>
-      <div class="swiper-slide"><img src="img/Arquitetura.png" alt="Livro sobre Arquitetura da AluraBooks"></div> 
+        <div class="swiper">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/ApacheKafka.png" alt="Livro sobre apache Kafka da AluraBooks"></div>
+                <div class="swiper-slide"><img src="img/Javascript.png" alt="Livro sobre Javascript da AluraBooks"></div>
+                <div class="swiper-slide"><img src="img/Guia Front-end.png" alt="Livro sobre Front-End da AluraBooks"></div>
+                <div class="swiper-slide"><img src="img/Acessibilidade.png" alt="Livro sobre Acessibilidade da AluraBooks"></div>
+                <div class="swiper-slide"><img src="img/Liderança.png" alt="Livro sobre Liderança da AluraBooks"></div>
+                ...
+            </div>
+            
 
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
-
-      ...
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-  </div>
+    
+        </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-          speed: 400,
-        spaceBetween: 10});
-        </script>
-     
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination:  {
+                 el:'.swipwer-pagination',
+                 type: 'bullets',
+            },
+    });
+    </script>
 </body>
 
-</html> 
+</html>
